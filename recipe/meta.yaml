@@ -1,5 +1,5 @@
 {% set name = "langchain-anthropic" %}
-{% set version = "0.1.15" %}
+{% set version = "0.1.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langchain_anthropic-{{ version }}.tar.gz
-  sha256: c5c3c6eaccb11ed99a63886e50873ac21eaf8e9441e0f75c7ae7cd8cdef65155
+  sha256: 28187dfb19389772e0abba98eeb0210ed3d99ab0a73f2e6707aa46c9bbbbe407
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - pip
   run:
     - python >=3.8.1,<4.0
-    - langchain-core >=0.2.2rc1,<0.3
+    - langchain-core >=0.2.10,<0.3
     - anthropic >=0.28.0,<1
     - defusedxml <0.8.0,>=0.7.1
   run_constrained:
