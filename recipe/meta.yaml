@@ -1,5 +1,5 @@
 {% set name = "langchain-anthropic" %}
-{% set version = "0.1.16" %}
+{% set version = "0.1.17" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/langchain_anthropic-{{ version }}.tar.gz
-  sha256: 28187dfb19389772e0abba98eeb0210ed3d99ab0a73f2e6707aa46c9bbbbe407
+  sha256: bd8b16d07c6b78228eaf76ca6aae28e29a186e0048aab79effd35ccf819d1851
 
 build:
   noarch: python
