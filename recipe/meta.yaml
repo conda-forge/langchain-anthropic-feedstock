@@ -1,5 +1,5 @@
 {% set name = "langchain-anthropic" %}
-{% set version = "0.3.17" %}
+{% set version = "0.3.18" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/langchain_anthropic-{{ version }}.tar.gz
-  sha256: f2c2a0382ed7992204d790ff8538448f5243f4dbb1e798256ef790c9a69033e4
+  sha256: f18970ae58fc4d79c8431dd67f8ab777de5e6d2f92285c8c9af1999cd126fb0a
 
 build:
   noarch: python
@@ -22,8 +22,8 @@ requirements:
   run:
     - pydantic <3.0.0,>=2.7.4
     - python >={{ python_min }},<4.0
-    - langchain-core <1.0.0,>=0.3.68
-    - anthropic <1,>=0.57.0
+    - langchain-core <1.0.0,>=0.3.72
+    - anthropic <1,>=0.60.0
     - defusedxml <0.8.0,>=0.7.1
   run_constrained:
     - defusedxml >=0.7.1,<0.8.0
