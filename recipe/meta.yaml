@@ -24,8 +24,6 @@ requirements:
     - python >={{ python_min }},<4.0
     - langchain-core >=1.4.7,<2.0.0
     - anthropic >=0.96.0,<1.0.0
-  run_constrained:
-    - defusedxml >=0.7.1,<1.0.0
 
 test:
   imports:
