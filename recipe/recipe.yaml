@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langchain-anthropic
-  version: 1.7.5
+  version: 1.7.6
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/langchain_anthropic-${{ version }}.tar.gz
-  sha256: 6016f38e5c4bf12c16ecfa76abf133a978f459f4d2887b8e28435ae1ff00beb3
+  sha256: e5b41959a39810e69bc608fd6622b7d5d017bde93f858b09332fbb6ac764c393
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - pydantic >=2.7.4,<3.0.0
     - python >=${{ python_min }},<4.0
-    - langchain-core >=1.6.6,<2.0.0
+    - langchain-core >=1.6.10,<2.0.0
     - anthropic >=0.120.0,<2.0.0
 tests:
   - python:
