@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: langchain-anthropic
-  version: 1.7.12
+  version: "1.7.13"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/${{ name[0] }}/${{ name }}/langchain_anthropic-${{ version }}.tar.gz
-  sha256: 63a330696a06e44b5c347dcd9cafb52dbf9acd840c447cd0ec8298518e3b9d3e
+  sha256: c0d243b46ba5ff1c8db5b013752aaf213d003322b7e0fd2d3db829f2da8dd802
 
 build:
   number: 0
